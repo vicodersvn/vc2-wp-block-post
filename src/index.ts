@@ -14,6 +14,6 @@ export default function handler(options: any): Rule {
   ]);
   return chain([
     mergeWith(templateSource),
-    App.make(WordpressService).declareInServiceProvider('app/Providers/BlockServiceProvider.php', `\\App\\Blocks\\FancyBoxBlock::class,`)
+    App.make(WordpressService).declareInServiceProvider('app/Providers/BlockServiceProvider.php', `\\App\\Blocks\\PostBlock::class,`)
   ]);
 }
