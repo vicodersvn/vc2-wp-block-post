@@ -4,7 +4,7 @@ import { WordpressService } from './services/Php/Wordpress/WordpressService';
 import { App } from '@nsilly/container';
 
 export default function handler(options: any): Rule {
-  const templateSource = apply(url('./files/slider'), [
+  const templateSource = apply(url('./files/post'), [
     applyTemplates({
       ...strings,
       ...options
