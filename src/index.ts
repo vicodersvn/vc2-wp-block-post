@@ -5,7 +5,7 @@ import { App } from '@nsilly/container';
 import * as path from 'path';
 
 export default function handler(options: any): Rule {
-  const templateSource = apply(url('./files/post'), [
+  const templateSource = apply(url('./files/slider'), [
     applyTemplates({
       ...strings,
       ...options
